@@ -1,4 +1,4 @@
-This is a repositories for FDELab in FPGA Course. We design a LDPC encoder that works efficiently. 
+This is an LDPC encoder developed by verilog for FPGA FDELab Course.
 
 #  Folder Structure
 
