@@ -1,0 +1,16 @@
+<design name="name_display">
+  <port name="lcd_db[0]" position="P7"/>
+<port name="lcd_db[1]" position="P6"/>
+<port name="lcd_db[2]" position="P5"/>
+<port name="lcd_db[3]" position="P4"/>
+<port name="lcd_db[4]" position="P9"/>
+<port name="lcd_db[5]" position="P8"/>
+<port name="lcd_db[6]" position="P16"/>
+<port name="lcd_db[7]" position="P15"/>
+<port name="clk" position="P77"/>
+<port name="rst_n" position="P151"/>
+<port name="lcd_en" position="P11"/>
+<port name="lcd_rs" position="P10"/>
+<port name="lcd_rw" position="P20"/>
+<port name="lcd_rst" position="P18"/>
+    </design>

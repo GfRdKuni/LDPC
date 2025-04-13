@@ -1,0 +1,1 @@
+{"name":"name_display","file_lists":[{"name":"name_display_gate.v","path":"E:\\UFDE_Project\\FDELab\\Name_display\\UFDE\\name_display_gate.v","type":"verilog"}],"target_device":"FDP3P7","settings":{"route":{"mode":"Direct Search"},"place":{"mode":"Timing Driven"}}}

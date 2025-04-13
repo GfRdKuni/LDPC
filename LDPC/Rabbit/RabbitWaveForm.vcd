@@ -1,0 +1,521 @@
+$timescale 20 ms
+$end
+$var wire 1 din[0] din[0] $end
+$var wire 1 din[1] din[1] $end
+$var wire 1 din[2] din[2] $end
+$var wire 1 din[3] din[3] $end
+$var wire 1 rst_n rst_n $end
+$var wire 1 din_vld din_vld $end
+$var wire 1 led[0] led[0] $end
+$var wire 1 led[1] led[1] $end
+$var wire 1 led[2] led[2] $end
+$var wire 1 led[3] led[3] $end
+$var wire 1 led[4] led[4] $end
+$var wire 1 led[5] led[5] $end
+$var wire 1 led[6] led[6] $end
+$var wire 1 led[7] led[7] $end
+$var wire 1 led[8] led[8] $end
+$var wire 1 led[9] led[9] $end
+$var wire 1 led[10] led[10] $end
+$var wire 1 led[11] led[11] $end
+$var wire 1 led[12] led[12] $end
+$var wire 1 led[13] led[13] $end
+$var wire 1 led[14] led[14] $end
+$var wire 1 led[15] led[15] $end
+$var wire 1 led_idle[0] led_idle[0] $end
+$var wire 1 led_idle[1] led_idle[1] $end
+$var wire 1 led_idle[2] led_idle[2] $end
+$var wire 1 led_idle[3] led_idle[3] $end
+$var wire 1 led_en[0] led_en[0] $end
+$var wire 1 led_en[1] led_en[1] $end
+$var wire 1 led_en[2] led_en[2] $end
+$var wire 1 led_en[3] led_en[3] $end
+$var wire 1 led_write_cnt[0] led_write_cnt[0] $end
+$var wire 1 led_write_cnt[1] led_write_cnt[1] $end
+$var wire 1 led_filled[0] led_filled[0] $end
+$var wire 1 led_filled[1] led_filled[1] $end
+$var wire 1 led_filled[2] led_filled[2] $end
+$var wire 1 led_filled[3] led_filled[3] $end
+$var wire 1 led_filled[4] led_filled[4] $end
+$var wire 1 led_filled[5] led_filled[5] $end
+$var wire 1 led_filled[6] led_filled[6] $end
+$var wire 1 led_filled[7] led_filled[7] $end
+$var wire 1 led_filled[8] led_filled[8] $end
+$var wire 1 led_filled[9] led_filled[9] $end
+$var wire 1 led_filled[10] led_filled[10] $end
+$var wire 1 led_filled[11] led_filled[11] $end
+$var wire 1 led_filled[12] led_filled[12] $end
+$var wire 1 led_filled[13] led_filled[13] $end
+$var wire 1 led_filled[14] led_filled[14] $end
+$var wire 1 led_filled[15] led_filled[15] $end
+$var wire 1 led_is_done[0] led_is_done[0] $end
+$var wire 1 led_is_done[1] led_is_done[1] $end
+$var wire 1 led_is_done[2] led_is_done[2] $end
+$var wire 1 led_is_done[3] led_is_done[3] $end
+$var wire 1 led_ready led_ready $end
+$var wire 1 led_vld led_vld $end
+$var wire 1 led_serdes_vld led_serdes_vld $end
+$var wire 1 led_din_vld_pulse led_din_vld_pulse $end
+$var wire 1 led_is_full led_is_full $end
+$enddefinitions $end
+$dumpvars
+b0 din[0]
+b0 din[1]
+b0 din[2]
+b0 din[3]
+b0 rst_n
+b0 din_vld
+b0 led[0]
+b0 led[1]
+b0 led[2]
+b0 led[3]
+b0 led[4]
+b0 led[5]
+b0 led[6]
+b0 led[7]
+b0 led[8]
+b0 led[9]
+b0 led[10]
+b0 led[11]
+b0 led[12]
+b0 led[13]
+b0 led[14]
+b0 led[15]
+b0 led_idle[0]
+b0 led_idle[1]
+b0 led_idle[2]
+b0 led_idle[3]
+b0 led_en[0]
+b0 led_en[1]
+b0 led_en[2]
+b0 led_en[3]
+b0 led_write_cnt[0]
+b0 led_write_cnt[1]
+b0 led_filled[0]
+b0 led_filled[1]
+b0 led_filled[2]
+b0 led_filled[3]
+b0 led_filled[4]
+b0 led_filled[5]
+b0 led_filled[6]
+b0 led_filled[7]
+b0 led_filled[8]
+b0 led_filled[9]
+b0 led_filled[10]
+b0 led_filled[11]
+b0 led_filled[12]
+b0 led_filled[13]
+b0 led_filled[14]
+b0 led_filled[15]
+b0 led_is_done[0]
+b0 led_is_done[1]
+b0 led_is_done[2]
+b0 led_is_done[3]
+b0 led_ready
+b0 led_vld
+b0 led_serdes_vld
+b0 led_din_vld_pulse
+b0 led_is_full
+$end
+#0
+b1 led_idle[0]
+b1 led_idle[1]
+b1 led_idle[2]
+b1 led_idle[3]
+b1 led_en[0]
+b1 led_ready
+b1 rst_n
+#20
+b0 rst_n
+#27
+b1 rst_n
+#36
+b1 din[2]
+#38
+b1 din[1]
+#42
+b1 din[0]
+#45
+b1 led_din_vld_pulse
+b1 din_vld
+#46
+b1 led_write_cnt[0]
+b0 led_din_vld_pulse
+#47
+b0 din_vld
+#59
+b0 din[2]
+#61
+b0 din[1]
+#63
+b0 din[0]
+#67
+b1 led_din_vld_pulse
+b1 din_vld
+#68
+b0 led_write_cnt[0]
+b1 led_write_cnt[1]
+b0 led_din_vld_pulse
+#69
+b0 din_vld
+#81
+b1 din[3]
+#83
+b1 din[2]
+#86
+b1 din[1]
+#89
+b1 led_din_vld_pulse
+b1 din_vld
+#90
+b1 led_write_cnt[0]
+b0 led_din_vld_pulse
+#91
+b0 din_vld
+#105
+b1 led_din_vld_pulse
+b1 din_vld
+#106
+b0 led_write_cnt[0]
+b0 led_write_cnt[1]
+b0 led_din_vld_pulse
+b1 led_is_full
+#107
+b1 led_serdes_vld
+b0 led_is_full
+b0 din_vld
+#108
+b0 led_idle[0]
+b0 led_en[0]
+b1 led_en[1]
+b0 led_serdes_vld
+#116
+b0 din[3]
+#118
+b1 din[0]
+#121
+b1 led_din_vld_pulse
+b1 din_vld
+#122
+b1 led_write_cnt[0]
+b0 led_din_vld_pulse
+#123
+b0 din_vld
+#128
+b1 din[3]
+#130
+b0 din[2]
+#132
+b0 din[1]
+#135
+b0 din[0]
+#139
+b1 led_din_vld_pulse
+b1 din_vld
+#140
+b0 led_write_cnt[0]
+b1 led_write_cnt[1]
+b0 led_din_vld_pulse
+#141
+b0 din_vld
+#147
+b1 din[2]
+#154
+b1 led_din_vld_pulse
+b1 din_vld
+#155
+b1 led_write_cnt[0]
+b0 led_din_vld_pulse
+#156
+b0 din_vld
+#159
+b1 din[1]
+#161
+b1 din[0]
+#164
+b1 led_din_vld_pulse
+b1 din_vld
+#165
+b0 led_write_cnt[0]
+b0 led_write_cnt[1]
+b0 led_din_vld_pulse
+b1 led_is_full
+b0 din_vld
+#166
+b1 led_serdes_vld
+b0 led_is_full
+#167
+b0 led_idle[1]
+b0 led_en[1]
+b1 led_en[2]
+b0 led_serdes_vld
+#172
+b1 led_is_done[0]
+#173
+b0 din[2]
+#175
+b0 din[1]
+#177
+b0 din[0]
+#185
+b1 led_din_vld_pulse
+b1 din_vld
+#186
+b1 led_write_cnt[0]
+b0 led_din_vld_pulse
+#187
+b0 din_vld
+#197
+b1 din[1]
+#205
+b1 led_din_vld_pulse
+b1 din_vld
+#206
+b0 led_write_cnt[0]
+b1 led_write_cnt[1]
+b0 led_din_vld_pulse
+#207
+b0 din_vld
+#211
+b1 din[2]
+#213
+b0 din[1]
+#214
+b1 din[0]
+#220
+b1 led_din_vld_pulse
+b1 din_vld
+#221
+b1 led_write_cnt[0]
+b0 led_din_vld_pulse
+#222
+b0 din_vld
+#231
+b1 led_is_done[1]
+#235
+b0 din[2]
+#237
+b0 din[3]
+#240
+b0 din[0]
+#243
+b1 led_din_vld_pulse
+b1 din_vld
+#244
+b0 led_write_cnt[0]
+b0 led_write_cnt[1]
+b0 led_din_vld_pulse
+b1 led_is_full
+#245
+b1 led_serdes_vld
+b0 led_is_full
+b0 din_vld
+#246
+b0 led_idle[2]
+b0 led_en[2]
+b1 led_en[3]
+b0 led_serdes_vld
+#255
+b1 din[1]
+#257
+b1 din[0]
+#260
+b1 led_din_vld_pulse
+b1 din_vld
+#261
+b1 led_write_cnt[0]
+b0 led_din_vld_pulse
+#262
+b0 din_vld
+#272
+b0 din[1]
+#274
+b1 din[3]
+#277
+b1 led_din_vld_pulse
+b1 din_vld
+#278
+b0 led_write_cnt[0]
+b1 led_write_cnt[1]
+b0 led_din_vld_pulse
+b0 din_vld
+#290
+b1 din[2]
+#293
+b1 din[1]
+#299
+b1 led_din_vld_pulse
+b1 din_vld
+#300
+b1 led_write_cnt[0]
+b0 led_din_vld_pulse
+b0 din_vld
+#305
+b0 din[2]
+#308
+b1 led_din_vld_pulse
+b1 din_vld
+#309
+b0 led_write_cnt[0]
+b0 led_write_cnt[1]
+b0 led_din_vld_pulse
+b1 led_is_full
+#310
+b1 led_is_done[2]
+b1 led_serdes_vld
+b0 led_is_full
+b0 din_vld
+#311
+b0 led_idle[3]
+b1 led_en[0]
+b0 led_en[3]
+b0 led_ready
+b0 led_serdes_vld
+#316
+b1 led_filled[0]
+#320
+b1 led_filled[1]
+#324
+b1 led_filled[2]
+#328
+b1 led_filled[3]
+#332
+b1 led_filled[4]
+#336
+b1 led_filled[5]
+#340
+b1 led_filled[6]
+#344
+b1 led_filled[7]
+#348
+b1 led_filled[8]
+#352
+b1 led_filled[9]
+#356
+b1 led_filled[10]
+#360
+b1 led_filled[11]
+#364
+b1 led_filled[12]
+#368
+b1 led_filled[13]
+#372
+b1 led_filled[14]
+#375
+b1 led_is_done[3]
+#376
+b1 led_filled[15]
+b0 led_is_done[0]
+b0 led_is_done[1]
+b0 led_is_done[2]
+b0 led_is_done[3]
+#377
+b1 led[2]
+b1 led[3]
+b1 led[4]
+b1 led[5]
+b1 led[6]
+b1 led[7]
+b1 led[9]
+b1 led[10]
+b1 led[11]
+b1 led[13]
+b1 led[14]
+b1 led[15]
+b0 led_filled[0]
+b0 led_filled[1]
+b0 led_filled[2]
+b0 led_filled[3]
+b0 led_filled[4]
+b0 led_filled[5]
+b0 led_filled[6]
+b0 led_filled[7]
+b0 led_filled[8]
+b0 led_filled[9]
+b0 led_filled[10]
+b0 led_filled[11]
+b0 led_filled[12]
+b0 led_filled[13]
+b0 led_filled[14]
+b0 led_filled[15]
+b1 led_vld
+#378
+b0 led_vld
+#382
+b1 led_filled[0]
+#386
+b1 led_filled[1]
+#390
+b1 led_filled[2]
+#394
+b1 led_filled[3]
+#398
+b1 led_filled[4]
+#402
+b1 led_filled[5]
+#406
+b1 led_filled[6]
+#410
+b1 led_filled[7]
+#414
+b1 led_filled[8]
+#418
+b1 led_filled[9]
+#422
+b1 led_filled[10]
+#426
+b1 led_filled[11]
+#430
+b1 led_filled[12]
+#434
+b1 led_filled[13]
+#438
+b1 led_filled[14]
+#441
+b1 led_idle[0]
+b1 led_idle[1]
+b1 led_idle[2]
+b1 led_idle[3]
+b1 led_ready
+#442
+b1 led_filled[15]
+#443
+b1 led[1]
+b0 led[3]
+b0 led[5]
+b0 led[7]
+b0 led[10]
+b0 led[11]
+b1 led[12]
+b0 led[15]
+b0 led_filled[0]
+b0 led_filled[1]
+b0 led_filled[2]
+b0 led_filled[3]
+b0 led_filled[4]
+b0 led_filled[5]
+b0 led_filled[6]
+b0 led_filled[7]
+b0 led_filled[8]
+b0 led_filled[9]
+b0 led_filled[10]
+b0 led_filled[11]
+b0 led_filled[12]
+b0 led_filled[13]
+b0 led_filled[14]
+b0 led_filled[15]
+b1 led_vld
+#444
+b0 led_vld
+#476
+b0 led[1]
+b0 led[2]
+b0 led[4]
+b0 led[6]
+b0 led[9]
+b0 led[12]
+b0 led[13]
+b0 led[14]
+b0 rst_n
+#484
+b1 rst_n

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Rabbit Project File-->
+<project name="Name_display" constraint="Name_display_cons.xml" bitstream="Name_display_dc_bit.bit">
+    <panel grid_width="50" grid_height="50"/>
+    <components>
+        <component type="TextLCD" name="Name_display" grid_x="5" grid_y="2">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P11" port="EN"/>
+                <output pin="" port="RST"/>
+                <output pin="P7" port="DB0"/>
+                <output pin="P6" port="DB1"/>
+                <output pin="P5" port="DB2"/>
+                <output pin="P4" port="DB3"/>
+                <output pin="P9" port="DB4"/>
+                <output pin="P8" port="DB5"/>
+                <output pin="P16" port="DB6"/>
+                <output pin="P15" port="DB7"/>
+            </outputs>
+        </component>
+        <component type="Switch" name="Rst" grid_x="2" grid_y="2">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+            </settings>
+            <inputs>
+                <input pin="P151" port="SW"/>
+            </inputs>
+            <outputs/>
+        </component>
+    </components>
+</project>

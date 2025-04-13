@@ -1,0 +1,625 @@
+$timescale 166 ms
+$end
+$var wire 1 rst_n rst_n $end
+$var wire 1 lcd_db[0] lcd_db[0] $end
+$var wire 1 lcd_db[1] lcd_db[1] $end
+$var wire 1 lcd_db[2] lcd_db[2] $end
+$var wire 1 lcd_db[3] lcd_db[3] $end
+$var wire 1 lcd_db[4] lcd_db[4] $end
+$var wire 1 lcd_db[5] lcd_db[5] $end
+$var wire 1 lcd_db[6] lcd_db[6] $end
+$var wire 1 lcd_db[7] lcd_db[7] $end
+$var wire 1 lcd_en lcd_en $end
+$var wire 1 lcd_rs lcd_rs $end
+$var wire 1 lcd_rw lcd_rw $end
+$var wire 1 lcd_rst lcd_rst $end
+$enddefinitions $end
+$dumpvars
+b0 rst_n
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[2]
+b0 lcd_db[3]
+b0 lcd_db[4]
+b0 lcd_db[5]
+b0 lcd_db[6]
+b0 lcd_db[7]
+b0 lcd_en
+b0 lcd_rs
+b0 lcd_rw
+b0 lcd_rst
+$end
+#0
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[3]
+b1 lcd_rs
+#1
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[3]
+b1 lcd_en
+#2
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[3]
+b0 lcd_en
+#3
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[3]
+b1 lcd_en
+#4
+b1 lcd_db[1]
+b1 lcd_db[4]
+b1 lcd_db[5]
+b0 lcd_en
+#5
+b0 lcd_db[1]
+b0 lcd_db[4]
+b0 lcd_db[5]
+b1 lcd_en
+#6
+b1 lcd_db[0]
+b1 lcd_db[2]
+b1 lcd_db[4]
+b1 lcd_db[6]
+b0 lcd_en
+#7
+b0 lcd_db[0]
+b0 lcd_db[2]
+b0 lcd_db[4]
+b0 lcd_db[6]
+b1 lcd_en
+#8
+b1 lcd_db[0]
+b1 lcd_db[3]
+b1 lcd_db[6]
+b0 lcd_en
+#9
+b0 lcd_db[0]
+b0 lcd_db[3]
+b0 lcd_db[6]
+b1 lcd_en
+#10
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[3]
+b1 lcd_db[6]
+b0 lcd_en
+#11
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[3]
+b0 lcd_db[6]
+b1 lcd_en
+#12
+b1 lcd_db[0]
+b1 lcd_db[6]
+b0 lcd_en
+#13
+b0 lcd_db[0]
+b0 lcd_db[6]
+b1 lcd_en
+#14
+b1 lcd_db[1]
+b1 lcd_db[2]
+b1 lcd_db[3]
+b1 lcd_db[6]
+b0 lcd_en
+#15
+b0 lcd_db[1]
+b0 lcd_db[2]
+b0 lcd_db[3]
+b0 lcd_db[6]
+b1 lcd_en
+#16
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[2]
+b1 lcd_db[6]
+b0 lcd_en
+#17
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[2]
+b0 lcd_db[6]
+b1 lcd_en
+#18
+b0 lcd_en
+#19
+b1 lcd_en
+#20
+b0 lcd_en
+#21
+b1 lcd_en
+#22
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[2]
+b1 lcd_db[5]
+b0 lcd_en
+#23
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[2]
+b0 lcd_db[5]
+b1 lcd_en
+#24
+b1 lcd_db[0]
+b1 lcd_db[2]
+b1 lcd_db[4]
+b1 lcd_db[6]
+b0 lcd_en
+#25
+b0 lcd_db[0]
+b0 lcd_db[2]
+b0 lcd_db[4]
+b0 lcd_db[6]
+b1 lcd_en
+#26
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[2]
+b1 lcd_db[3]
+b1 lcd_db[6]
+b0 lcd_en
+#27
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[2]
+b0 lcd_db[3]
+b0 lcd_db[6]
+b1 lcd_en
+#28
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[3]
+b0 lcd_en
+#29
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[3]
+b1 lcd_en
+#30
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[3]
+b0 lcd_en
+#31
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[3]
+b1 lcd_en
+#32
+b0 lcd_en
+#33
+b1 lcd_en
+#34
+b0 lcd_en
+#35
+b1 lcd_en
+#36
+b0 lcd_en
+#37
+b1 lcd_en
+#38
+b0 lcd_en
+#39
+b1 lcd_en
+#40
+b0 lcd_en
+#41
+b1 lcd_en
+#42
+b0 lcd_en
+#43
+b1 lcd_en
+#44
+b0 lcd_en
+#45
+b1 lcd_en
+#46
+b0 lcd_en
+#47
+b1 lcd_en
+#48
+b0 lcd_en
+#49
+b1 lcd_en
+#50
+b0 lcd_en
+#51
+b1 lcd_en
+#52
+b0 lcd_en
+#53
+b1 lcd_en
+#54
+b0 lcd_en
+#55
+b1 lcd_en
+#56
+b0 lcd_en
+#57
+b1 lcd_en
+#58
+b0 lcd_en
+#59
+b1 lcd_en
+#60
+b0 lcd_en
+#61
+b1 lcd_en
+#62
+b0 lcd_en
+#63
+b1 lcd_en
+#64
+b1 lcd_db[1]
+b1 lcd_db[3]
+b0 lcd_en
+#65
+b0 lcd_db[1]
+b0 lcd_db[3]
+b1 lcd_en
+#66
+b1 lcd_db[1]
+b1 lcd_db[3]
+b0 lcd_en
+#67
+b0 lcd_db[1]
+b0 lcd_db[3]
+b1 lcd_en
+#68
+b0 lcd_en
+#69
+b1 lcd_en
+#70
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[2]
+b1 lcd_db[4]
+b1 lcd_db[5]
+b0 lcd_en
+#71
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[2]
+b0 lcd_db[4]
+b0 lcd_db[5]
+b1 lcd_en
+#72
+b1 lcd_db[0]
+b1 lcd_db[2]
+b1 lcd_db[6]
+b0 lcd_en
+#73
+b0 lcd_db[0]
+b0 lcd_db[2]
+b0 lcd_db[6]
+b1 lcd_en
+#74
+b1 lcd_db[2]
+b1 lcd_db[3]
+b1 lcd_db[6]
+b0 lcd_en
+#75
+b0 lcd_db[2]
+b0 lcd_db[3]
+b0 lcd_db[6]
+b1 lcd_en
+#76
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[6]
+b0 lcd_en
+#77
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[6]
+b1 lcd_en
+#78
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[2]
+b1 lcd_db[3]
+b1 lcd_db[6]
+b0 lcd_en
+#79
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[2]
+b0 lcd_db[3]
+b0 lcd_db[6]
+b1 lcd_en
+#80
+b1 lcd_db[0]
+b1 lcd_db[2]
+b1 lcd_db[3]
+b1 lcd_db[6]
+b0 lcd_en
+#81
+b0 lcd_db[0]
+b0 lcd_db[2]
+b0 lcd_db[3]
+b0 lcd_db[6]
+b1 lcd_en
+#82
+b1 lcd_db[0]
+b1 lcd_db[2]
+b1 lcd_db[6]
+b0 lcd_en
+#83
+b0 lcd_db[0]
+b0 lcd_db[2]
+b0 lcd_db[6]
+b1 lcd_en
+#84
+b0 lcd_en
+#85
+b1 lcd_en
+#86
+b1 lcd_db[2]
+b1 lcd_db[4]
+b1 lcd_db[5]
+b0 lcd_en
+#87
+b0 lcd_db[2]
+b0 lcd_db[4]
+b0 lcd_db[5]
+b1 lcd_en
+#88
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[2]
+b1 lcd_db[3]
+b1 lcd_db[6]
+b0 lcd_en
+#89
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[2]
+b0 lcd_db[3]
+b0 lcd_db[6]
+b1 lcd_en
+#90
+b0 lcd_en
+#91
+b1 lcd_en
+#92
+b1 lcd_db[1]
+b1 lcd_db[3]
+b0 lcd_en
+#93
+b0 lcd_db[1]
+b0 lcd_db[3]
+b1 lcd_en
+#94
+b1 lcd_db[1]
+b1 lcd_db[3]
+b0 lcd_en
+#95
+b0 lcd_db[1]
+b0 lcd_db[3]
+b1 lcd_en
+#96
+b1 lcd_db[1]
+b1 lcd_db[2]
+b1 lcd_db[5]
+b0 lcd_en
+#97
+b0 lcd_db[1]
+b0 lcd_db[2]
+b0 lcd_db[5]
+b1 lcd_en
+#98
+b1 lcd_db[0]
+b1 lcd_db[2]
+b1 lcd_db[4]
+b1 lcd_db[6]
+b0 lcd_en
+#99
+b0 lcd_db[0]
+b0 lcd_db[2]
+b0 lcd_db[4]
+b0 lcd_db[6]
+b1 lcd_en
+#100
+b1 lcd_db[2]
+b1 lcd_db[6]
+b0 lcd_en
+#101
+b0 lcd_db[2]
+b0 lcd_db[6]
+b1 lcd_en
+#102
+b1 lcd_db[0]
+b1 lcd_db[6]
+b0 lcd_en
+#103
+b0 lcd_db[0]
+b0 lcd_db[6]
+b1 lcd_en
+#104
+b1 lcd_db[1]
+b1 lcd_db[2]
+b1 lcd_db[3]
+b1 lcd_db[6]
+b0 lcd_en
+#105
+b0 lcd_db[1]
+b0 lcd_db[2]
+b0 lcd_db[3]
+b0 lcd_db[6]
+b1 lcd_en
+#106
+b0 lcd_en
+#107
+b1 lcd_en
+#108
+b1 lcd_db[0]
+b1 lcd_db[2]
+b1 lcd_db[4]
+b1 lcd_db[5]
+b0 lcd_en
+#109
+b0 lcd_db[0]
+b0 lcd_db[2]
+b0 lcd_db[4]
+b0 lcd_db[5]
+b1 lcd_en
+#110
+b1 lcd_db[1]
+b1 lcd_db[2]
+b1 lcd_db[3]
+b1 lcd_db[6]
+b0 lcd_en
+#111
+b0 lcd_db[1]
+b0 lcd_db[2]
+b0 lcd_db[3]
+b0 lcd_db[6]
+b1 lcd_en
+#112
+b1 lcd_db[0]
+b1 lcd_db[3]
+b1 lcd_db[6]
+b0 lcd_en
+#113
+b0 lcd_db[0]
+b0 lcd_db[3]
+b0 lcd_db[6]
+b1 lcd_en
+#114
+b1 lcd_db[1]
+b1 lcd_db[2]
+b1 lcd_db[4]
+b1 lcd_db[6]
+b0 lcd_en
+#115
+b0 lcd_db[1]
+b0 lcd_db[2]
+b0 lcd_db[4]
+b0 lcd_db[6]
+b1 lcd_en
+#116
+b1 lcd_db[0]
+b1 lcd_db[2]
+b1 lcd_db[6]
+b0 lcd_en
+#117
+b0 lcd_db[0]
+b0 lcd_db[2]
+b0 lcd_db[6]
+b1 lcd_en
+#118
+b1 lcd_db[1]
+b1 lcd_db[4]
+b1 lcd_db[6]
+b0 lcd_en
+#119
+b0 lcd_db[1]
+b0 lcd_db[4]
+b0 lcd_db[6]
+b1 lcd_en
+#120
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[4]
+b1 lcd_db[6]
+b0 lcd_en
+#121
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[4]
+b0 lcd_db[6]
+b1 lcd_en
+#122
+b1 lcd_db[0]
+b1 lcd_db[3]
+b1 lcd_db[6]
+b0 lcd_en
+#123
+b0 lcd_db[0]
+b0 lcd_db[3]
+b0 lcd_db[6]
+b1 lcd_en
+#124
+b1 lcd_db[2]
+b1 lcd_db[4]
+b1 lcd_db[6]
+b0 lcd_en
+#125
+b0 lcd_db[2]
+b0 lcd_db[4]
+b0 lcd_db[6]
+b1 lcd_en
+#126
+b1 lcd_db[0]
+b1 lcd_db[3]
+b1 lcd_db[4]
+b1 lcd_db[6]
+b0 lcd_en
+#127
+b0 lcd_db[0]
+b0 lcd_db[3]
+b0 lcd_db[4]
+b0 lcd_db[6]
+b1 lcd_en
+#128
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[3]
+b0 lcd_en
+#129
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[3]
+b1 lcd_en
+#130
+b1 lcd_db[0]
+b1 lcd_db[1]
+b1 lcd_db[3]
+b0 lcd_en
+#131
+b0 lcd_db[0]
+b0 lcd_db[1]
+b0 lcd_db[3]
+b1 lcd_en
+#132
+b1 lcd_db[1]
+b1 lcd_db[4]
+b1 lcd_db[5]
+b0 lcd_en
+#133
+b0 lcd_db[1]
+b0 lcd_db[4]
+b0 lcd_db[5]
+b1 lcd_en
+#134
+b1 lcd_db[0]
+b1 lcd_db[2]
+b1 lcd_db[4]
+b1 lcd_db[6]
+b0 lcd_en
+#135
+b0 lcd_db[0]
+b0 lcd_db[2]
+b0 lcd_db[4]
+b0 lcd_db[6]
+b1 lcd_en
+#136
+b1 lcd_db[0]
+b1 lcd_db[3]
+b1 lcd_db[6]
+b0 lcd_en
+#137
+b0 lcd_db[0]
+b0 lcd_db[3]
+b0 lcd_db[6]
+b1 lcd_en
+#138
+b0 lcd_en
+b1 lcd_rst
+b1 rst_n

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Rabbit Project File-->
+<project name="LDPC_encoder" constraint="LDPC_encoder_cons.xml" bitstream="LDPC_encoder_dc_bit.bit">
+    <panel grid_width="50" grid_height="50"/>
+    <components>
+        <component type="LED" name="dout11" grid_x="8" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P18" port="LED"/>
+            </outputs>
+        </component>
+        <component type="Switch" name="Rst_n" grid_x="0" grid_y="0">
+            <settings>
+                <setting name="is_low_active" value="true"/>
+            </settings>
+            <inputs>
+                <input pin="P160" port="SW"/>
+            </inputs>
+            <outputs/>
+        </component>
+        <component type="LED" name="Done1" grid_x="4" grid_y="12">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P63" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled9" grid_x="28" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P98" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="idle0" grid_x="6" grid_y="8">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P44" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled7" grid_x="16" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P109" port="LED"/>
+            </outputs>
+        </component>
+        <component type="Switch" name="din[0]" grid_x="6" grid_y="2">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+            </settings>
+            <inputs>
+                <input pin="P151" port="SW"/>
+            </inputs>
+            <outputs/>
+        </component>
+        <component type="LED" name="Done2" grid_x="2" grid_y="12">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P60" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="idle3" grid_x="0" grid_y="8">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P43" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="input_vld_pulse" grid_x="14" grid_y="10">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P168" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="en1" grid_x="4" grid_y="10">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P41" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="write1" grid_x="10" grid_y="12">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P35" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout4" grid_x="6" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P9" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled10" grid_x="26" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P94" port="LED"/>
+            </outputs>
+        </component>
+        <component type="Switch" name="din[2]" grid_x="2" grid_y="2">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+            </settings>
+            <inputs>
+                <input pin="P150" port="SW"/>
+            </inputs>
+            <outputs/>
+        </component>
+        <component type="LED" name="en3" grid_x="0" grid_y="10">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P33" port="LED"/>
+            </outputs>
+        </component>
+        <component type="Button" name="din_vld" grid_x="8" grid_y="2">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+            </settings>
+            <inputs>
+                <input pin="P161" port="BTN"/>
+            </inputs>
+            <outputs/>
+        </component>
+        <component type="LED" name="filled3" grid_x="24" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P24" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="isfull" grid_x="10" grid_y="10">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P176" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout10" grid_x="10" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P20" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout12" grid_x="6" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P17" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="din_ready" grid_x="10" grid_y="2">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Green"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P56" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout0" grid_x="14" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P7" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout_vld" grid_x="14" grid_y="8">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Green"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P55" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="write0" grid_x="12" grid_y="12">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P34" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="en2" grid_x="2" grid_y="10">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P42" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled15" grid_x="16" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P73" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled13" grid_x="20" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P83" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout6" grid_x="2" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P16" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout5" grid_x="4" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P8" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="idle1" grid_x="4" grid_y="8">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P45" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout8" grid_x="14" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P11" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout2" grid_x="10" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P5" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled11" grid_x="24" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P93" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled6" grid_x="18" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P110" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout15" grid_x="0" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P23" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout13" grid_x="4" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P22" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout9" grid_x="12" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P10" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled5" grid_x="20" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P29" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled12" grid_x="22" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P84" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled0" grid_x="30" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P36" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout14" grid_x="2" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P21" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="serdes" grid_x="12" grid_y="10">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P167" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled4" grid_x="22" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P27" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout1" grid_x="12" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P6" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="idle2" grid_x="2" grid_y="8">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P46" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout3" grid_x="8" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P4" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="dout7" grid_x="0" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Black"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P15" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled14" grid_x="18" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P82" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled1" grid_x="28" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P30" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled2" grid_x="26" grid_y="6">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P31" port="LED"/>
+            </outputs>
+        </component>
+        <component type="Switch" name="din[3]" grid_x="0" grid_y="2">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+            </settings>
+            <inputs>
+                <input pin="P152" port="SW"/>
+            </inputs>
+            <outputs/>
+        </component>
+        <component type="LED" name="Done0" grid_x="6" grid_y="12">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P71" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="en0" grid_x="6" grid_y="10">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P40" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="filled8" grid_x="30" grid_y="4">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P99" port="LED"/>
+            </outputs>
+        </component>
+        <component type="LED" name="Done3" grid_x="0" grid_y="12">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+                <setting name="color" usage="LED color" value="Red"/>
+            </settings>
+            <inputs/>
+            <outputs>
+                <output pin="P59" port="LED"/>
+            </outputs>
+        </component>
+        <component type="Switch" name="din[1]" grid_x="4" grid_y="2">
+            <settings>
+                <setting name="is_low_active" value="false"/>
+            </settings>
+            <inputs>
+                <input pin="P148" port="SW"/>
+            </inputs>
+            <outputs/>
+        </component>
+    </components>
+</project>

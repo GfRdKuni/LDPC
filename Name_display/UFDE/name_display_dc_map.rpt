@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type='text/xsl' href='fdu_report.xsl'?>
+<report app="map" design="name_display" label="FDE Mapping Report File">
+	<section id="Type_Count" label="Type Count">
+		<table id="General_Table">
+			<column id="Type_Name" label="Type Name"/>
+			<column id="Count" label="Count"/>
+			<row id="1">
+				<item id="Type_Name" value="FFLATCH"/>
+				<item id="Count" value="14"/>
+			</row>
+			<row id="2">
+				<item id="Type_Name" value="FFLATCH_DFFRHQ"/>
+				<item id="Count" value="14"/>
+			</row>
+			<row id="3">
+				<item id="Type_Name" value="LUT"/>
+				<item id="Count" value="100"/>
+			</row>
+			<row id="4">
+				<item id="Type_Name" value="LUT2"/>
+				<item id="Count" value="12"/>
+			</row>
+			<row id="5">
+				<item id="Type_Name" value="LUT3"/>
+				<item id="Count" value="24"/>
+			</row>
+			<row id="6">
+				<item id="Type_Name" value="LUT4"/>
+				<item id="Count" value="64"/>
+			</row>
+			<row id="7">
+				<item id="Type_Name" value="MACRO"/>
+				<item id="Count" value="16"/>
+			</row>
+			<row id="8">
+				<item id="Type_Name" value="MACRO_IPAD"/>
+				<item id="Count" value="2"/>
+			</row>
+			<row id="9">
+				<item id="Type_Name" value="MACRO_LOGIC_0"/>
+				<item id="Count" value="1"/>
+			</row>
+			<row id="10">
+				<item id="Type_Name" value="MACRO_LOGIC_1"/>
+				<item id="Count" value="1"/>
+			</row>
+			<row id="11">
+				<item id="Type_Name" value="MACRO_OPAD"/>
+				<item id="Count" value="12"/>
+			</row>
+		</table>
+	</section>
+</report>
+

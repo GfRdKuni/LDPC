@@ -1,0 +1,68 @@
+=== LDPC Encoder Simulation Log ===
+Time:                    0
+
+[Test Case 1] Reset Test
+
+[Test Case 2] Normal Data Transmission - Frame 1
+[140000] Sent Frame1[0]: 7   
+[160000] Sent Frame1[1]: 0    
+[180000] Sent Frame1[2]: e   
+[200000] Sent Frame1[3]: e   
+[220000] Sent Frame1[4]: 7    
+[240000] Sent Frame1[5]: 8   
+[260000] Sent Frame1[6]: c   
+[280000] Sent Frame1[7]: f    
+[300000] Sent Frame1[8]: 8   
+[320000] Sent Frame1[9]: a    
+[340000] Sent Frame1[10]: d 
+[360000] Sent Frame1[11]: 0 
+[380000] Sent Frame1[12]: 3 
+[400000] Sent Frame1[13]: 9 
+[420000] Sent Frame1[14]: f  
+[440000] Sent Frame1[15]: b 
+
+[Test Case 3] Continuous Input Test - Frame 2
+[462000] Sent Frame2[0]: 3
+[805000] Output[0]: fc
+[1125000] Output[1]: ee
+[1455000] Output[2]: 56
+[1522000] Sent Frame2[1]: c
+[1542000] Sent Frame2[2]: b
+[1562000] Sent Frame2[3]: 6
+[1582000] Sent Frame2[4]: 5
+[1602000] Sent Frame2[5]: a
+[1622000] Sent Frame2[6]: 2
+[1642000] Sent Frame2[7]: 8
+[1662000] Sent Frame2[8]: 6
+[1682000] Sent Frame2[9]: d
+[1702000] Sent Frame2[10]: f
+[1722000] Sent Frame2[11]: b
+[1742000] Sent Frame2[12]: 8
+[1762000] Sent Frame2[13]: 1
+[1775000] Output[3]: 72
+[1782000] Sent Frame2[14]: 4
+[1802000] Sent Frame2[15]: e
+
+[Waiting for Outputs]
+[2165000] Output[4]: 2e
+[2485000] Output[5]: 9d
+[2815000] Output[6]: 46
+[3135000] Output[7]: 72
+
+[Result Comparison]
+  Output[0] matches: fc
+  Output[1] matches: ee
+  Output[2] matches: 56
+  Output[3] matches: 72
+  Output[4] matches: 2e
+  Output[5] matches: 9d
+  Output[6] matches: 46
+  Output[7] matches: 72
+
+[Test Statistics]
+  Total packets processed : 0
+  Total input errors      : 0
+  Total output mismatches : 0
+
+=== Simulation Completed ===
+End Time:              3135000

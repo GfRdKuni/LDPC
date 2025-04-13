@@ -1,2 +1,78 @@
-# LDPC
-This is an LDPC encoder developed by verilog for FPGA FDELab Course.
+#  Folder Structure
+
+```plaintext
+---FDELab_郭睿康_22307130115\
+   --- doc\
+       ---FDE Lab.pptx (Slide)
+       ---FDELab_郭睿康_Report_22307130115.pdf
+   --- LDPC\
+       ---DC\
+          ---LDPC_top_gate.v
+          ---run_dc.tcl
+       ---Demo\
+          ---Demo.mp4
+          ---LDPC_encoder_simulation.txt(Simulation log)
+       ---Rabbit\
+          ---LDPC_encoder.rbtprj
+          ---LDPC_encoder_dc_bit.bit
+          ---LDPC_encoder_cons.xml
+          ---RabbitReadData.txt
+          ---RabbitWriteData.txt
+          ---RabbitWaveForm.vcd
+       ---RTL\
+          ---tb\
+             ---LDPC_encoder_tb.sv
+             ---Serdes_tb.v
+          ---v_src\
+             ---Accumulator.v
+             ---Crossbar.v
+             ---DFF.v
+             ---LDPC_encoder.v
+             ---LDPC_top.v
+             ---Output_Buffer.v
+             ---Processing_Unit.v
+             ---ROM.v
+             ---Serdes.v
+             ---Sys_Cnt.v
+       ---UFDE\
+       	  ---LDPC_encoder_dc_bit.bit
+          ---LDPC_encoder_cons.xml
+          ---LDPC_encoder_dc_imp.xml
+          ---LDPC_encoder_dc_map.rpt
+          ---LDPC_encoder_dc_map.xml
+          ---LDPC_encoder_dc_p_plc_rpt.xml
+          ---LDPC_encoder_dc_pack.xml
+          ---LDPC_encoder_dc_place.xml
+          ---LDPC_encoder_dc_route.xml
+          ---LDPC_top_gate.v
+          ---place.txt
+   --- Name_display\
+       ---DC\
+          ---name_display_gate.v
+          ---run_dc.tcl
+       ---Demo\
+          ---Demo.mp4
+       ---Rabbit\
+          ---Name_display.rbtprj
+          ---Name_display_dc_bit.bit
+          ---Name_display_cons.xml
+          ---RabbitReadData.txt
+          ---RabbitWriteData.txt
+          ---RabbitWaveForm.vcd
+       ---RTL\
+          ---name_display.v
+       ---UFDE\
+       	  ---name_display_dc_bit.bit
+          ---name_display_cons.xml
+          ---name_display_dc_imp.xml
+          ---name_display_dc_map.rpt
+          ---name_display_dc_map.xml
+          ---name_display_dc_p_plc_rpt.xml
+          ---name_display_dc_pack.xml
+          ---name_display_dc_place.xml
+          ---name_display_dc_route.xml
+          ---name_display_gate.v
+          ---place.txt
+          ---name_display.json
+```
+

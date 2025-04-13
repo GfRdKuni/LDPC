@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type='text/xsl' href='fdu_report.xsl'?>
+<report design="LDPC_encoder_dc_p">
+	<section id="Type_Count" label="Type Count">
+		<table id="General_Table">
+			<column id="Type_Name" label="Type Name"/>
+			<column id="Count" label="Count"/>
+			<row id="1">
+				<item id="Type_Name" value="GCLK"/>
+				<item id="Count" value="1"/>
+			</row>
+			<row id="2">
+				<item id="Type_Name" value="GCLKIOB"/>
+				<item id="Count" value="1"/>
+			</row>
+			<row id="3">
+				<item id="Type_Name" value="IOB"/>
+				<item id="Count" value="57"/>
+			</row>
+			<row id="4">
+				<item id="Type_Name" value="SLICE"/>
+				<item id="Count" value="455"/>
+			</row>
+		</table>
+	</section>
+</report>
+
