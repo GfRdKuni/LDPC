@@ -1,3 +1,5 @@
+This is a repositories for FDELab in FPGA Course. We design a LDPC encoder that works efficiently. 
+
 #  Folder Structure
 
 ```plaintext
